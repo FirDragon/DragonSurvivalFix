@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "by.srinater.dragonsurvivalfix.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "DragonSurvivalFix.refmap.json",
+  "mixins": [
+    "DragonSkinsMixin",
+    "DragonSkinReloadHandleMixin",
+    "GitcodeSkinLoaderMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
