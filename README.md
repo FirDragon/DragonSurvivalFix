@@ -10,3 +10,4 @@ This is an emergency patch mod for the DragonSurvival module, created to fix ser
 
 **Tip:**
 You can enable or disable any of the above individual fixes in the configuration file. The configurations for the client and server are separate, and by default, all fixes are enabled. These fixes only provide the functionality of the fixes themselves and may not result in behavior identical to the DS fixes after application (for example, adjustments to the downgraded skill functionality).
+Please disable the corresponding fix of this MOD promptly after DS releases a new fix update.
