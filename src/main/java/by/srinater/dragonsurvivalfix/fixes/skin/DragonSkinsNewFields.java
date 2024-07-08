@@ -1,4 +1,4 @@
-package by.srinater.dragonsurvivalfix.utils;
+package by.srinater.dragonsurvivalfix.fixes.skin;
 
 public class DragonSkinsNewFields {
     public static boolean initialized = false;
