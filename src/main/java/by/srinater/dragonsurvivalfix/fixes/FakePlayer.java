@@ -7,7 +7,7 @@ import net.minecraft.world.level.Level;
 
 public class FakePlayer extends Player {
     public FakePlayer(Level pLevel, BlockPos pPos, float pYRot, GameProfile pGameProfile) {
-        super(pLevel, pPos, pYRot, pGameProfile);
+        super(pLevel, pPos, pYRot, pGameProfile, null);
     }
 
     @Override

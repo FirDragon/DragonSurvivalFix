@@ -38,7 +38,7 @@ public class SyncSkillLevelChangeCostMixin{
 
                     if (levelCost != 0 && !sender.isCreative()) {
                         if (levelCost > 0)
-                            sender.giveExperiencePoints(ExpCalc.CalcLevelExpPoint(sender.level(), levelCost));
+                            sender.giveExperiencePoints(ExpCalc.CalcLevelExpPoint(sender.level, levelCost));
                         else
                             sender.giveExperienceLevels(levelCost);;
                     }

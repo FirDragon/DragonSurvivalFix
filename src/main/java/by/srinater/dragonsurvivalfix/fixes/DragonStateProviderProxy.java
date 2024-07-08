@@ -13,7 +13,7 @@ public class DragonStateProviderProxy {
         if (entity == null) {
             return LazyOptional.empty();
         } else {
-            if (entity.level().isClientSide) {
+            if (entity.level.isClientSide) {
                 Pair<Boolean, LazyOptional<DragonStateHandler>> fakeState = DragonStateProviderAccessor.getFakePlayer(entity);
                 if (fakeState.first) {
                     return fakeState.second;
