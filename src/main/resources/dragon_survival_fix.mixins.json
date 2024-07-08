@@ -5,9 +5,13 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "DragonSurvivalFix.refmap.json",
   "mixins": [
-    "DragonSkinsMixin",
+    "DisableDragonStateProviderCache",
     "DragonSkinReloadHandleMixin",
-    "GitcodeSkinLoaderMixin"
+    "DragonSkinsMixin",
+    "DragonStateProviderAccessor",
+    "GitcodeSkinLoaderMixinToGitee",
+    "SyncSkillLevelChangeCostMixin",
+    "ISyncSkillLevelChangeCostAccessor"
   ],
   "client": [
   ],
