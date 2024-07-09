@@ -9,5 +9,7 @@ This is an emergency patch mod for the DragonSurvival module, created to fix ser
 4. Fix the issue where downgrading dragon skills can be used to farm experience.
 
 **Tip:**
-You can enable or disable any of the above individual fixes in the configuration file. The configurations for the client and server are separate, and by default, all fixes are enabled. These fixes only provide the functionality of the fixes themselves and may not result in behavior identical to the DS fixes after application (for example, adjustments to the downgraded skill functionality).
+You can enable or disable any of the above individual fixes in the configuration file. 
+The configurations for the client and server are separate, and by default, all fixes are enabled. 
+These fixes are merely temporary solutions to errors, and the changes made to address the errors may not represent the final decisions for Dragon Survival (for example, adjustments to the downgrade skill functionality logic).
 Please disable the corresponding fix of this MOD promptly after DS releases a new fix update.
