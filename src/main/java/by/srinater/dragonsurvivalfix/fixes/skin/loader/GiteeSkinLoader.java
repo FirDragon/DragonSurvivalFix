@@ -63,11 +63,11 @@ public class GiteeSkinLoader extends NetSkinLoader{
             if (skinListResponse.tree.length != 0) {
                 for (GiteeSkin giteeSkin : skinListResponse.tree)
                 {
-                    if (!giteeSkin.type.equals("blob") && giteeSkin.path.startsWith(SKINS_LOCATION))
+                    if (!giteeSkin.type.equals("blob") || !giteeSkin.path.startsWith(SKINS_LOCATION))
                         continue;
                     SkinObject skin = new SkinObject();
                     skin.name = giteeSkin.path.substring(SKINS_LOCATION.length());
-                    skin.short_name = giteeSkin.path;
+                    skin.short_name = giteeSkin.path.substring(SKINS_LOCATION.length());
                     skin.id = giteeSkin.sha;
                     skin.size = giteeSkin.size;
                     skin.user_extra = giteeSkin;
