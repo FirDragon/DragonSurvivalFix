@@ -15,8 +15,9 @@ import java.util.Collection;
 
 public class GiteeSkinLoader extends NetSkinLoader{
     // https://gitee.com/api/v5/repos/{owner}/{repo}/git/trees/{sha}
-    private static final String SKINS_LIST_LINK = "https://gitee.com/api/v5/repos/srinater/DragonSurvival/git/trees/0969d10831f1a6d1f26e5ee44d0b8b194771dfb0";
+    private static final String SKINS_LIST_LINK = "https://gitee.com/api/v5/repos/srinater/DragonSurvival/git/trees/master?recursive=1";
     private static final String SKINS_PING = "https://gitee.com/api/v5/repos/srinater/DragonSurvival/git/trees/master";
+    private static final String SKINS_LOCATION = "src/test/resources/";
     static class GiteeSkin{
         public String path;
         public String type;
@@ -62,10 +63,10 @@ public class GiteeSkinLoader extends NetSkinLoader{
             if (skinListResponse.tree.length != 0) {
                 for (GiteeSkin giteeSkin : skinListResponse.tree)
                 {
-                    if (!giteeSkin.type.equals("blob"))
+                    if (!giteeSkin.type.equals("blob") && giteeSkin.path.startsWith(SKINS_LOCATION))
                         continue;
                     SkinObject skin = new SkinObject();
-                    skin.name = giteeSkin.path;
+                    skin.name = giteeSkin.path.substring(SKINS_LOCATION.length());
                     skin.short_name = giteeSkin.path;
                     skin.id = giteeSkin.sha;
                     skin.size = giteeSkin.size;
